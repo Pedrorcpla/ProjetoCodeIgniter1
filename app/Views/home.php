@@ -8,22 +8,214 @@
 </head>
 <style>
     *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Futura-Bold;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
     body{
         min-height: 100vh;
         background: rgb(0, 0, 0);
     }
+    .header{
+        position: absolute;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 30px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 10000;
+        border-bottom: 1px solid #4fff034b;
+        background: rgb(0, 0, 0);
+    }
+    .header .logo{
+        color: #4dff03;
+        font-weight: 700;
+        font-size: 2em;
+        text-decoration: none;
+    }
+    .header ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header ul li{
+        list-style: none;
+        margin-left: 20px;
+    }
+    .header ul li a{
+        text-decoration: none;
+        padding: 6px 15px;
+        color: white;
+        font-size: 1.5em;
+        border-radius: 20px;
+        transition: 0.3s;
+        letter-spacing: 0.03em;
+    }
+    .header ul li a:hover{
+        color: #4dff03;
+        box-shadow: 0 0 20px #4fff0383;
+    }
+    #menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 80vh;
+        padding: 40px 0;
+    }
+    #menu .imgBx{
+        position: relative;
+        width: 100vw;
+        opacity: 1;
+        top: -10vh;
+        height: 90vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 2s;
+    }
+    .blur{
+        filter: blur(20px);
+        opacity: 0.4;
+    }
+    #menu .imgBx h2{
+        position: absolute;
+        color: #4dff03;
+        font-size: 15em;
+    }
+    #menu .imgBx p{
+        position: absolute;
+        margin-top: 50vh;
+        margin-right: -42.5vw;
+        color: #fff;
+        font-size: 8em;
+    }
+    .mais{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 5vh;
+        padding: 40px 0;
+    }
+    .mais a{
+        color: #4dff03;
+        font-size: 2em;
+        animation: animate2 2s ease infinite;
+    }
+
+    @keyframes animate2 {
+        0%,100%{
+            transform: translateY(5px);
+        }
+        50%{
+            transform: translateY(-5px);
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .header{
+            width: 100%;
+            padding: 30px 50px;
+        }
+        .header .logo{
+            font-weight: 700;
+            font-size: 3em;
+        }
+        .header ul li{
+            margin-left: 20px;
+        }
+        .header ul li a{
+            padding: 6px 10px;
+            font-size: 1.5em;
+            border-radius: 20px;
+        }
+        #menu{
+            height: 80vh;
+            padding: 20px 0;
+        }
+        #menu .imgBx{
+            width: 100vw;
+            top: 0;
+            height: 90vh;
+        }
+        #menu .imgBx h2{
+            font-size: 12.5em;
+        }
+        #menu .imgBx p{
+            margin-top: 34vh;
+            margin-right: -50vw;
+            font-size: 5em;
+        }
+    }
+    @media only screen and (max-width: 650px) {
+        .container .box .content h2{
+            font-size: 20px;
+        }
+        .container .box .content p{
+            font-size: 20px;
+        }
+        .container .box .content a{
+            font-size: 20px;
+        }
+        .container .box .content h2{
+            font-size: 1em;
+        }
+        .container .box .content p{
+            font-size: 0.5em;
+        }
+        .container .box .content a{
+            font-size: 1em;
+        }
+        .header{
+            width: 100%;
+            padding: 30px 40px;
+        }
+        .header .logo{
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+        .header ul li{
+            margin-left: 15px;
+        }
+        .header ul li a{
+            padding: 6px 8px;
+            font-size: 1em;
+            border-radius: 20px;
+        }
+        #menu{
+            height: 80vh;
+            padding: 20px 0;
+        }
+        #menu .imgBx{
+            width: 100vw;
+            top: 0;
+            height: 90vh;
+        }
+        .blur{
+            filter: blur(20px);
+        }
+        #menu .imgBx h2{
+            font-size: 8em;
+        }
+        #menu .imgBx p{
+            margin-top: 24vh;
+            margin-right: -60vw;
+            font-size: 3.5em;
+        }
+    }
+
     .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 40px 0;
-    margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 40px 0;
+        margin-top: 5%;
     }
     .container .box{
         position: relative;
@@ -141,7 +333,7 @@
             transform: translateY(-10px);
         }
         50%{
-            transform: translateY(-30px);
+            transform: translateY(-40px);
         }
     }
     .container .box .content{
@@ -169,7 +361,6 @@
         font-size: 1.5em;
         margin-bottom: 10px;
         line-height: 1.4em;
-        font-family: Futura-Light;
     }
     .container .box .content a{
         display: inline-block;
@@ -182,40 +373,120 @@
         font-weight: 700;
         margin-top: 5px;
     }
+
+    .infos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 40px 0;
+    }
+    .infos .content{
+        position: relative;
+        left: 0px;
+        width: 90vw;
+        min-height: 50vh;
+        padding: 20px 40px;
+        background: rgba(50, 50, 50, 0.15);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        border-radius: 8px;
+        backdrop-filter: blur(10px);
+        z-index: 1;
+        transition: 0.5s;
+        color: #fff;
+    }
+    #sobre h2,
+    #sobre span{
+        color:#4dff03;
+    }
+    #servicos h2,
+    #servicos span{
+        color:#00d0ff;
+    }
+    #clientes h2,
+    #clientes span{
+        color:#ffbc00;
+    }
+    .infos .content p{
+        font-size: 1.4em;
+        letter-spacing: 2px;
+    }
+    .infos .content img{
+        width: 20vw;
+        margin: 0 2%;
+    }
+    .infos .content .row{
+        margin-top: 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .rodape{
+        margin-top: 2%;
+        margin-bottom: 2%;
+        border-top: 1px solid #4fff034b;
+        background: rgba(50, 50, 50, 0.15);
+        min-height: 20vh;
+        display: flex;
+        color: white;
+    }
+    .rodape .left{
+        margin: 2% 5%;
+        min-width: 50vw;
+    }
+    .fa-whatsapp{
+        color:#4dff03;
+        margin-right: 3%;
+    }
+    .fa-envelope{
+        color:#00d0ff;
+        margin-right: 3%;
+    }
+    .fa-instagram{
+        color:#ffbc00;
+        margin-right: 3%;
+    }
+    .rodape .left h3{
+        font-size:1.3em;
+        margin-bottom: 5%; 
+    }
+    .rodape .left li{
+        font-size: 1.3em;
+        list-style: none;
+        margin-top: 3%;
+        letter-spacing: 0.1em;
+    }
+    .rodape .left a{
+        text-decoration: none;
+        color: white;
+    }
+    .right{
+        min-width: 20vw;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1% 0;
+        margin-bottom: 1%;
+    }
+    .right p{
+        color: gray;
+        letter-spacing: 0.1em;
+        font-size: 1.5em;
+    }
+    .right span{
+        color:#4dff03;
+    }
 </style>
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>Seja bem vindo!</h1>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Navbar</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link" href="#">Features</a>
-                            <a class="nav-link" href="#">Pricing</a>
-                            <a class="nav-link disabled">Disabled</a>
-                        </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-        <!-- Fim Header -->
         <!-- Inicio do corpo da página -->
-        <div class="row">
-            <div class="col">
-                
+        <div id="menu">
+            <div class="imgBx">
+                    <h2 class="blur">Pedro</h2>
+                    <p class="blur">Tavares</p>
+                    <h2>Pedro</h2>
+                    <p>Tavares</p>
             </div>
         </div>
         <div class="container" id="cards">
@@ -231,7 +502,7 @@
                 <span></span>
                 <div class="content">
                     <h2>Serviços</h2>
-                    <p>A equipe Jungle Office é composta por diagramadores, ilustradores, designers e desenvolvedores web.<br> Venha conferir o que podemos fazer por você!</p>
+                    <p>Tavares é conhecido por fazer programas. Em outras palavras, é um garoto de programa.<br> Venha ver o que ele pode fazer por você!</p>
                     <a href="#servicos">Veja Mais</a>
                 </div>
             </div>
@@ -244,15 +515,8 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <h3>Todos os direitos reservados</h3>
-            </div>
-        </div>
         
         <!-- Final do corpo da página -->
-        <!-- Inicio do footer -->
-        
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
