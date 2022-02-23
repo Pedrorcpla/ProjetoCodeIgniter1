@@ -495,7 +495,7 @@
                 <div class="content">
                     <h2>Sobre nós</h2>
                     <p>- Por que escolhemos esse nome?<br>- Qual nossa área de atuação?<br>- Desde quando estamos no mercado?<br>- Qual é nosso objetivo?</p>
-                    <a href="#sobre">Veja Mais</a>
+                    <a href="quemsomos">Veja Mais</a>
                 </div>
             </div>
             <div class="box">
