@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\PessoasModel;
+
 class Home extends BaseController
 {
     public function index()
@@ -14,6 +16,19 @@ class Home extends BaseController
     public function page($page='home'){
         echo view('template/header');
         echo view($page);
+        echo view('template/footer');
+    }
+
+    public function pessoa(){
+        $model = new PessoaModel();
+
+        $data = [
+            'title'         =>  'Pessoas',
+            'pessoas'       =>  $model->getPessoas(),
+        ];
+
+        echo view('template/header');
+        echo view('pessoa', $data);
         echo view('template/footer');
     }
 }
