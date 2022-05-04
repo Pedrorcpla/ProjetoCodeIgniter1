@@ -1,0 +1,113 @@
+CRITICAL - 2022-05-04 11:58:35 --> Undefined variable: pessoa_item
+#0 C:\wamp64\www\ProjetoCodeIgniter1\app\Views\pessoa.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\P...', 74, Array)
+#1 C:\wamp64\www\ProjetoCodeIgniter1\system\View\View.php(210): include('C:\\wamp64\\www\\P...')
+#2 C:\wamp64\www\ProjetoCodeIgniter1\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\ProjetoCodeIgniter1\system\Common.php(1089): CodeIgniter\View\View->render('pessoa', Array, true)
+#4 C:\wamp64\www\ProjetoCodeIgniter1\app\Controllers\Home.php(31): view('pessoa', Array)
+#5 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(825): App\Controllers\Home->pessoas()
+#6 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\ProjetoCodeIgniter1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\ProjetoCodeIgniter1\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#10 {main}
+CRITICAL - 2022-05-04 12:08:18 --> Invalid file: cadastro.php
+#0 C:\wamp64\www\ProjetoCodeIgniter1\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadastro.php')
+#1 C:\wamp64\www\ProjetoCodeIgniter1\system\Common.php(1089): CodeIgniter\View\View->render('cadastro', Array, true)
+#2 C:\wamp64\www\ProjetoCodeIgniter1\app\Controllers\Home.php(18): view('cadastro')
+#3 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(825): App\Controllers\Home->page('cadastro')
+#4 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ProjetoCodeIgniter1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\ProjetoCodeIgniter1\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#8 {main}
+CRITICAL - 2022-05-04 12:08:46 --> Invalid file: cadastro-pessoas.php
+#0 C:\wamp64\www\ProjetoCodeIgniter1\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadastro-pessoa...')
+#1 C:\wamp64\www\ProjetoCodeIgniter1\system\Common.php(1089): CodeIgniter\View\View->render('cadastro-pessoa...', Array, true)
+#2 C:\wamp64\www\ProjetoCodeIgniter1\app\Controllers\Home.php(37): view('cadastro-pessoa...')
+#3 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(825): App\Controllers\Home->cadastro()
+#4 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ProjetoCodeIgniter1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\ProjetoCodeIgniter1\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#8 {main}
+CRITICAL - 2022-05-04 12:08:47 --> Invalid file: cadastro-pessoas.php
+#0 C:\wamp64\www\ProjetoCodeIgniter1\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadastro-pessoa...')
+#1 C:\wamp64\www\ProjetoCodeIgniter1\system\Common.php(1089): CodeIgniter\View\View->render('cadastro-pessoa...', Array, true)
+#2 C:\wamp64\www\ProjetoCodeIgniter1\app\Controllers\Home.php(37): view('cadastro-pessoa...')
+#3 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(825): App\Controllers\Home->cadastro()
+#4 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ProjetoCodeIgniter1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\ProjetoCodeIgniter1\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#8 {main}
+CRITICAL - 2022-05-04 12:08:48 --> Invalid file: cadastro-pessoas.php
+#0 C:\wamp64\www\ProjetoCodeIgniter1\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadastro-pessoa...')
+#1 C:\wamp64\www\ProjetoCodeIgniter1\system\Common.php(1089): CodeIgniter\View\View->render('cadastro-pessoa...', Array, true)
+#2 C:\wamp64\www\ProjetoCodeIgniter1\app\Controllers\Home.php(37): view('cadastro-pessoa...')
+#3 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(825): App\Controllers\Home->cadastro()
+#4 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ProjetoCodeIgniter1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\ProjetoCodeIgniter1\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#8 {main}
+CRITICAL - 2022-05-04 12:08:48 --> Invalid file: cadastro-pessoas.php
+#0 C:\wamp64\www\ProjetoCodeIgniter1\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadastro-pessoa...')
+#1 C:\wamp64\www\ProjetoCodeIgniter1\system\Common.php(1089): CodeIgniter\View\View->render('cadastro-pessoa...', Array, true)
+#2 C:\wamp64\www\ProjetoCodeIgniter1\app\Controllers\Home.php(37): view('cadastro-pessoa...')
+#3 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(825): App\Controllers\Home->cadastro()
+#4 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ProjetoCodeIgniter1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\ProjetoCodeIgniter1\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#8 {main}
+CRITICAL - 2022-05-04 12:08:48 --> Invalid file: cadastro-pessoas.php
+#0 C:\wamp64\www\ProjetoCodeIgniter1\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadastro-pessoa...')
+#1 C:\wamp64\www\ProjetoCodeIgniter1\system\Common.php(1089): CodeIgniter\View\View->render('cadastro-pessoa...', Array, true)
+#2 C:\wamp64\www\ProjetoCodeIgniter1\app\Controllers\Home.php(37): view('cadastro-pessoa...')
+#3 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(825): App\Controllers\Home->cadastro()
+#4 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ProjetoCodeIgniter1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\ProjetoCodeIgniter1\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#8 {main}
+CRITICAL - 2022-05-04 12:08:48 --> Invalid file: cadastro-pessoas.php
+#0 C:\wamp64\www\ProjetoCodeIgniter1\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadastro-pessoa...')
+#1 C:\wamp64\www\ProjetoCodeIgniter1\system\Common.php(1089): CodeIgniter\View\View->render('cadastro-pessoa...', Array, true)
+#2 C:\wamp64\www\ProjetoCodeIgniter1\app\Controllers\Home.php(37): view('cadastro-pessoa...')
+#3 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(825): App\Controllers\Home->cadastro()
+#4 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ProjetoCodeIgniter1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\ProjetoCodeIgniter1\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#8 {main}
+CRITICAL - 2022-05-04 12:08:49 --> Invalid file: cadastro-pessoas.php
+#0 C:\wamp64\www\ProjetoCodeIgniter1\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadastro-pessoa...')
+#1 C:\wamp64\www\ProjetoCodeIgniter1\system\Common.php(1089): CodeIgniter\View\View->render('cadastro-pessoa...', Array, true)
+#2 C:\wamp64\www\ProjetoCodeIgniter1\app\Controllers\Home.php(37): view('cadastro-pessoa...')
+#3 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(825): App\Controllers\Home->cadastro()
+#4 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ProjetoCodeIgniter1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\ProjetoCodeIgniter1\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#8 {main}
+CRITICAL - 2022-05-04 12:08:49 --> Invalid file: cadastro-pessoas.php
+#0 C:\wamp64\www\ProjetoCodeIgniter1\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cadastro-pessoa...')
+#1 C:\wamp64\www\ProjetoCodeIgniter1\system\Common.php(1089): CodeIgniter\View\View->render('cadastro-pessoa...', Array, true)
+#2 C:\wamp64\www\ProjetoCodeIgniter1\app\Controllers\Home.php(37): view('cadastro-pessoa...')
+#3 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(825): App\Controllers\Home->cadastro()
+#4 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\wamp64\www\ProjetoCodeIgniter1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\wamp64\www\ProjetoCodeIgniter1\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#8 {main}
+CRITICAL - 2022-05-04 12:56:38 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\wamp64\www\ProjetoCodeIgniter1\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\P...')
+#1 C:\wamp64\www\ProjetoCodeIgniter1\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(790): class_exists('\\App\\Controller...', true)
+#5 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->startController()
+#6 C:\wamp64\www\ProjetoCodeIgniter1\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\ProjetoCodeIgniter1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\wamp64\www\ProjetoCodeIgniter1\system\Commands\Server\rewrite.php(43): require_once('C:\\wamp64\\www\\P...')
+#9 {main}
