@@ -45,13 +45,27 @@ class Home extends BaseController
             'id'        =>  $this->request->getVar('id'),
             'nome'      =>  $this->request->getVar('nome'),
             'profissao' =>  $this->request->getVar('profissao'),
-            'idade'     =>  $this->request->getVar('idade'),
+            'idade'     =>  $this->request->getVar('idade')
         ]);
+
+        return redirect("pessoa");
     }
 
     public function excluir($id = null){
         $model = new PessoasModel();
         $model->delete($id);
         return redirect("pessoa");
+    }
+
+    public function editar($id = null){
+        $model = new PessoasModel();
+
+        $data = [
+            'pessoa'    =>  $model->getPessoa($id),
+        ];
+
+        echo view('template/header');
+        echo view('cadastro-pessoas', $data);
+        echo view('template/footer');
     }
 }
