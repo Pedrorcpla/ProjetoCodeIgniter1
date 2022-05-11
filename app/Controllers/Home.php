@@ -48,4 +48,10 @@ class Home extends BaseController
             'idade'     =>  $this->request->getVar('idade'),
         ]);
     }
+
+    public function excluir($id = null){
+        $model = new PessoasModel();
+        $model->delete($id);
+        return redirect("pessoa");
+    }
 }

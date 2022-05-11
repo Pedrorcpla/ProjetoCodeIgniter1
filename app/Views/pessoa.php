@@ -17,6 +17,8 @@
                 <td><?= $pessoas_item['nome'] ?></td>
                 <td><?= $pessoas_item['profissao'] ?></td>
                 <td><?= $pessoas_item['idade'] ?></td>
+                <td><a href="excluir/<?= $pessoas_item['id']?>" class="btn btn-danger">Apagar</a></td>
+                <td><a href="" class="btn btn-warning">Editar</a></td>
             </tr>
     <?php
         }
