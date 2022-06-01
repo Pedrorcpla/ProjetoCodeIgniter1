@@ -68,4 +68,25 @@ class Home extends BaseController
         echo view('cadastro-pessoas', $data);
         echo view('template/footer');
     }
+
+    public function login(){
+        echo view('template/header');
+        echo view('login');
+        echo view('template/footer');
+    }
+
+    public function logar(){
+        $model = new PessoasModel();
+
+        $senha = $this->request->getVar("senha");
+        $nome = $this->request->getVar("nome");
+
+        $data['usuario'] = $model->userLogin($nome, $senha);
+
+        if(empty($data['usuario'])){
+            return redirect("login");
+        }else{
+            return redirect("pessoa");
+        }
+    }
 }
