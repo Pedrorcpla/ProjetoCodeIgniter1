@@ -4,8 +4,17 @@
     <a href="home" class="logo">Tavares</a>
     <ul>
         <li><a href="quemsomos" class="navSobre">Nós</a></li>
-        <li><a href="#servicos" class="navServicos">Serviços</a></li>
-        <li><a href="#clientes" class="navClientes">Clientes</a></li>
-        <li><a href="#contato" class="navContato">Contato</a></li>
+        <li><a href="login" class="navLogin">Login</a></li>
+        
+        <?php 
+            $session = \Config\Services::session();
+            if($session->get('logado')){
+        ?>
+        
+        <li><a href="cadastro-pessoas" class="navCadastro">Cadastro</a></li>
+        <li><a href="pessoa" class="navLista">Listar</a></li>
+        <li><a href="sair" class="navSair">Sair</a></li>
+        
+        <?php } ?>
     </ul>
 </div>

@@ -9,11 +9,12 @@
         protected $primaryKey = 'id';
         protected $useAutoIncrement = true;
 
-        protected $allowedFields = ['nome', 'profissao', 'idade'];
+        protected $allowedFields = ['nome', 'profissao', 'idade', 'senha'];
         protected $validationRules = [
             'nome'          => 'required|min_length[3]',
             'profissao'     => 'required|min_length[2]',
-            'idade'         => 'required|min_length[1]|max_length[3]'
+            'idade'         => 'required|min_length[1]|max_length[3]',
+            'senha'         => 'required|min_length[1]'
         ];
 
         public function getPessoas(){

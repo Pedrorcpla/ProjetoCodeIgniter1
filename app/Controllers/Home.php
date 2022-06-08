@@ -25,7 +25,12 @@ class Home extends BaseController
         $data = [
             'title'     =>  'Pessoas',
             'pessoas'   =>  $model->getPessoas(),
+            'session'   =>  \Config\Services::session()
         ];
+
+        if(!$data['session']->get('logado')){
+            return redirect('login');
+        }
 
         echo view('template/header');
         echo view('pessoa', $data);
@@ -33,12 +38,24 @@ class Home extends BaseController
     }
 
     public function cadastro(){
+        $data['session'] = \Config\Services::session();
+
+        if(!$data['session']->get('logado')){
+            return redirect('login');
+        }
+
         echo view('template/header');
         echo view('cadastro-pessoas');
         echo view('template/footer');
     }
 
     public function gravar(){
+        $data['session'] = \Config\Services::session();
+
+        if(!$data['session']->get('logado')){
+            return redirect('login');
+        }
+
         $model = new PessoasModel();
 
         $model->save([
@@ -52,6 +69,12 @@ class Home extends BaseController
     }
 
     public function excluir($id = null){
+        $data['session'] = \Config\Services::session();
+
+        if(!$data['session']->get('logado')){
+            return redirect('login');
+        }
+
         $model = new PessoasModel();
         $model->delete($id);
         return redirect("pessoa");
@@ -62,7 +85,12 @@ class Home extends BaseController
 
         $data = [
             'pessoa'    =>  $model->getPessoa($id),
+            'session'   =>  \Config\Services::session(),
         ];
+
+        if(!$data['session']->get('logado')){
+            return redirect('login');
+        }
 
         echo view('template/header');
         echo view('cadastro-pessoas', $data);
@@ -81,12 +109,24 @@ class Home extends BaseController
         $senha = $this->request->getVar("senha");
         $nome = $this->request->getVar("nome");
 
-        $data['usuario'] = $model->userLogin($nome, $senha);
+        $data['usuario'] = $model->userLogin($nome, MD5($senha));
+        $data['session'] = \Config\Services::session();
 
         if(empty($data['usuario'])){
             return redirect("login");
         }else{
+            $sessionData = [
+                'usuario'   => $nome,
+                'logado'    => TRUE
+            ];
+            $data['session']->set($sessionData);
             return redirect("pessoa");
         }
+    }
+
+    public function sair(){
+        $data['session'] = \Config\Services::session();
+        $data['session']->destroy();
+        return redirect("login");
     }
 }
